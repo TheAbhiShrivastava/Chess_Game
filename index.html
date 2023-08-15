@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./chess-icon.jpg">
+    <title>Chess Game </title>
+</head>
+<body>
+    <div class="head_container">
+        <div class="icon_container">
+            <button>Restart</button>
+        </div>
+        <h1>Chess Game Create by Abhishek </h1>
+        <div class="mute">
+            <i class="fa-solid fa-volume-off display_block"></i>
+            <i class="fa-solid fa-volume-xmark display_none"></i>
+        </div>
+    </div>
+   
+    <div class="turn_container">
+    <h2 id="tog">White's Turn</h2>
+    </div>
+    
+    <ul class="chess_container">
+
+        <div class="chess_row" id="row8">
+            <li class="chess_box" id="b801">Brook</li>
+            <li class="chess_box" id="b802">Bknight</li>
+            <li class="chess_box" id="b803">Bbishop</li>
+            <li class="chess_box" id="b804">Bqueen</li>
+            <li class="chess_box" id="b805">Bking</li>
+            <li class="chess_box" id="b806">Bbishop</li>
+            <li class="chess_box" id="b807">Bknight</li>
+            <li class="chess_box" id="b808">Brook</li>
+        </div>
+        <div class="chess_row" id="row7">
+            <li class="chess_box" id="b701">Bpawn</li>
+            <li class="chess_box" id="b702">Bpawn</li>
+            <li class="chess_box" id="b703">Bpawn</li>
+            <li class="chess_box" id="b704">Bpawn</li>
+            <li class="chess_box" id="b705">Bpawn</li>
+            <li class="chess_box" id="b706">Bpawn</li>
+            <li class="chess_box" id="b707">Bpawn</li>
+            <li class="chess_box" id="b708">Bpawn</li>
+        </div>
+        <div class="chess_row" id="row6">
+            <li class="chess_box" id="b601"></li>
+            <li class="chess_box" id="b602"></li>
+            <li class="chess_box" id="b603"></li>
+            <li class="chess_box" id="b604"></li>
+            <li class="chess_box" id="b605"></li>
+            <li class="chess_box" id="b606"></li>
+            <li class="chess_box" id="b607"></li>
+            <li class="chess_box" id="b608"></li>
+        </div>
+        <div class="chess_row" id="row5">
+            <li class="chess_box" id="b501"></li>
+            <li class="chess_box" id="b502"></li>
+            <li class="chess_box" id="b503"></li>
+            <li class="chess_box" id="b504"></li>
+            <li class="chess_box" id="b505"></li>
+            <li class="chess_box" id="b506"></li>
+            <li class="chess_box" id="b507"></li>
+            <li class="chess_box" id="b508"></li>
+        </div>
+        <div class="chess_row" id="row4">
+            <li class="chess_box" id="b401"></li>
+            <li class="chess_box" id="b402"></li>
+            <li class="chess_box" id="b403"></li>
+            <li class="chess_box" id="b404"></li>
+            <li class="chess_box" id="b405"></li>
+            <li class="chess_box" id="b406"></li>
+            <li class="chess_box" id="b407"></li>
+            <li class="chess_box" id="b408"></li>
+        </div>
+        <div class="chess_row" id="row3">
+            <li class="chess_box" id="b301"></li>
+            <li class="chess_box" id="b302"></li>
+            <li class="chess_box" id="b303"></li>
+            <li class="chess_box" id="b304"></li>
+            <li class="chess_box" id="b305"></li>
+            <li class="chess_box" id="b306"></li>
+            <li class="chess_box" id="b307"></li>
+            <li class="chess_box" id="b308"></li>
+        </div>
+
+        <div class="chess_row" id="row2">
+            <li class="chess_box Wpawn" id="b201">Wpawn</li>
+            <li class="chess_box Wpawn" id="b202">Wpawn</li>
+            <li class="chess_box Wpawn" id="b203">Wpawn</li>
+            <li class="chess_box Wpawn" id="b204">Wpawn</li>
+            <li class="chess_box Wpawn" id="b205">Wpawn</li>
+            <li class="chess_box Wpawn" id="b206">Wpawn</li>
+            <li class="chess_box Wpawn" id="b207">Wpawn</li>
+            <li class="chess_box Wpawn" id="b208">Wpawn</li>
+        </div>
+        <div class="chess_row" id="row1">
+            <li class="chess_box" id="b101">Wrook</li>
+            <li class="chess_box" id="b102">Wknight</li>
+            <li class="chess_box" id="b103">Wbishop</li>
+            <li class="chess_box" id="b104">Wqueen</li>
+            <li class="chess_box" id="b105">Wking</li>
+            <li class="chess_box" id="b106">Wbishop</li>
+            <li class="chess_box" id="b107">Wknight</li>
+            <li class="chess_box" id="b108">Wrook</li>
+        </div>
+
+        <!-- <div class="alert_white">White's Turn</div>
+        <div class="alert_black">Black's Turn</div> -->
+
+    </ul>
+
+    <div class="winbox_container_white">
+        <div class="winbox">
+        <h1 class="heading">White Wins!!!</h1>
+        </div>
+    </div>
+    <div class="winbox_container_black">
+        <div class="winbox">
+        <h1 class="heading">Black Wins!!!</h1>
+        </div>
+    </div>
+      
+    <audio src="jumpsound.mpeg" class="move_sound"></audio>
+    <audio src="clapFinal.mpeg" class="win_sound"></audio>
+     <audio src="attackSound.mpeg" class="attack_sound"></audio>
+     <audio src="mixkit-game-show-wrong-answer-buzz-950.wav" class="wrong_select"></audio>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

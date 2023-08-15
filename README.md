@@ -1,2 +1,1 @@
-# Chess_Game
-javaScript_project
+# Chess_Game_JS
